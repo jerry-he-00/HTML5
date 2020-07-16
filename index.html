@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+body{
+    display: grid;
+    background-color: black;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 5fr 1fr ;
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
+    font-weight: 540;
+    color: white;
+    font-size: 30px;
+}
+header{
+    display: grid;
+    background-color: rgb(182, 160, 160);
+    border: 1px solid white;
+    justify-items: center;
+    align-items: center;
+}
+header[name=search]
+{
+    grid-column: 2/5;
+}
+main{
+    display: grid;
+    background-color: rgb(122, 101, 101);
+    border: 1px solid black;
+    padding: 10px;
+    grid-column: 1/6;
+    grid-template-columns:3fr 1fr;
+    grid-template-rows:auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+footer{
+    display: grid;
+    background-color: black;
+    border: 1px solid black;
+    padding: 0px;
+    grid-column: 1/6;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+nav{
+    display: grid;
+    background-color: rgb(182, 160, 160);
+    border: 1px solid white;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+section{
+    display: grid;
+    background-color: rgb(207, 197, 197);
+    border: 1px solid black;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <header>Logo</header>
+    <header name="search">Search</header>
+    <header>Tools</header>
+    <main>
+        <section>Images</section>
+        <section>Side List</section>
+    </main>
+    <footer>
+    <nav>Nav1</nav>
+    <nav>Nav2</nav>
+    <nav>Nav3</nav>
+    <nav>Nav4</nav>
+    </footer>
+</body>
+</html>
